@@ -125,7 +125,10 @@ section{
 .front-door_cards{
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
     margin-top: 8rem;
+    
 }
 
 .front-door_bg_img{
@@ -140,4 +143,44 @@ section{
     content: url(/styles/images/front-door-bg-r.svg);
     top: 100px;
     right: 320px;
+}
+
+.card-btn_purple {
+    padding: 2.5rem 6rem;
+    text-decoration: none;
+    background: linear-gradient(90deg,#4240a6 22.77%,rgba(70, 67, 185, 0.9) 100%);
+    color: white;
+    border-radius: 1.2rem;
+    font-size: 1.9rem;
+    font-weight: 700;
+    line-height: 1.2;
+    width: calc(30% - 1.9rem);
+    text-align: center;
+    box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.07);
+}
+.card-btn_teal{
+    padding: 2.5rem 6rem;
+    text-decoration: none;
+    background: linear-gradient( 90.11deg, rgba(255, 255, 255, 0.2) 0.11%, rgba(255, 255, 255, 0) 50.01% ), linear-gradient(90deg, #037f9b 0%, rgba(3, 127, 155, 0.8) 100%);
+    color: white;
+    border-radius: 1.2rem;
+    font-size: 1.9rem;
+    font-weight: 700;
+    line-height: 1.2;
+    width: calc(30% - 1.9rem);
+    text-align: center;
+    box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.07); 
+}
+.card-btn_dark_purple{
+    padding: 2.5rem 6rem;
+    text-decoration: none;
+    background:linear-gradient( 90deg, rgba(255, 255, 255, 0.2) 0%, rgba(255, 255, 255, 0) 56.55% ), linear-gradient(90deg, #191c59 0%, rgba(25, 28, 89, 0.85) 100%) ;
+    color: white;
+    border-radius: 1.2rem;
+    font-size: 1.9rem;
+    font-weight: 700;
+    line-height: 1.2;
+    width: calc(30% - 1.9rem);
+    text-align: center;
+    box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.07); 
 }
