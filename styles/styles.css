@@ -194,8 +194,11 @@ section{
 }
 
 .trust-stats_container{
+    display: flex;
+    flex-direction: column;
     padding-top: 7rem;
     padding-bottom:8rem;
+    margin:0px 300px;
 }
 
 .trust-stats_bg{
@@ -229,3 +232,28 @@ section{
     color: #464652;
     line-height: 1.5;
 }
+.stat-cards_wrapper{
+    display: flex;
+    grid-template-columns: repeat(3,1fr);
+    margin-top: 7rem;
+}
+.stat-cards_topcard{
+    display: flex;
+    flex-direction: column;
+    background: #daf4ef;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem 2rem;
+    border-radius: 1.2rem;
+    box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.07);
+}
+
+.topcard_header{
+    display: block;
+}
+
+.topcard-description{
+    text-align: center;
+    display: block;
+}
+
