@@ -187,9 +187,9 @@ section{
 
 .trust-stats{
     position: relative;
-    background-image: ;
+    background-image:url(/styles/images/trust-stats-bg-left.svg),url(/styles/images/trust-stats-bg-right.svg) ;
     background-repeat: no-repeat;
-    background-position: ;
+    background-position: calc(50% - 575px) calc(0% + 233px), calc(50% + 575px) calc(0% - 73px);
     background-color: rgba(66, 64, 166, 0.05);
 }
 
@@ -233,8 +233,10 @@ section{
     line-height: 1.5;
 }
 .stat-cards_wrapper{
-    display: flex;
-    grid-template-columns: repeat(3,1fr);
+    display: grid;
+    row-gap: 1rem;
+    column-gap: 2rem;
+    grid-template-columns: repeat(3, 1fr);
     margin-top: 7rem;
 }
 .stat-cards_topcard{
@@ -243,17 +245,21 @@ section{
     background: #daf4ef;
     justify-content: center;
     align-items: center;
-    padding: 2rem 2rem;
+    padding: 2rem 5rem;
     border-radius: 1.2rem;
     box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.07);
 }
 
 .topcard_header{
-    display: block;
+    color: #4240a6;
+    font-weight: 700;
+    font-size: 3rem;
 }
 
 .topcard-description{
+    color: #464652;
+    margin-top: 1rem;
     text-align: center;
-    display: block;
+    font-size: 1.4rem;   
 }
 
