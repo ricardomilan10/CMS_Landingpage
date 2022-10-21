@@ -265,13 +265,19 @@ section{
 
 .video-accessible{
     background-color: white;
+    width: 100%;
+    background-image: url(/styles/images/logo-red.svg);
+    background-repeat: no-repeat;
+    background-position: calc(50% + 220px) calc(100% + 100px);
+    background-size: 3844px;
+    z-index: 1;
 }
 
 .video-accessible_container{
-    margin: 0 300px;
+    margin: 0 200px;
     display: flex;
     flex-direction: row;
-    padding: 9.5rem 10.7rem;
+    padding: 5.5rem 10.7rem;
 }
 
 .paragraph_col_1{
@@ -285,6 +291,7 @@ section{
 }
 
 .video-accessible_container h4 {
+    font-weight: 600;
     font-size: 1.9rem;
     line-height: 1.2;
     color: #464652;   
@@ -295,7 +302,7 @@ section{
     display: grid;
     place-items: center;
     color: white;
-    font-weight: 800;
+    font-weight: 700;
     text-decoration: none;
     padding: 1.4rem 2rem;
     border-radius: 6px;
@@ -315,4 +322,18 @@ section{
     object-fit: contain;
     position: relative;
     
+}
+
+#play-btn{
+    position: absolute;
+    display: block;
+    cursor: pointer;
+    top: 50%;
+    left: 65%;
+    width: 7rem;
+    height: 7rem;
+    background: url(/styles/images/play-button.svg)no-repeat center/contain;
+    filter: drop-shadow(0px 2px 20px rgba(0, 0, 0, 0.8));
+    transition: transform 0.1s ease-in-out;
+    transform: translate(-50%, -50%) scale(1.1);
 }
