@@ -337,3 +337,52 @@ section{
     transition: transform 0.1s ease-in-out;
     transform: translate(-50%, -50%) scale(1.1);
 }
+
+.quote{
+    background: #4240a6;
+    position: relative;
+}
+
+.quote-bg1{
+    position:absolute;
+    z-index: 1;
+    content: url(/styles/images/home-quote-bg-l.svg);
+    top:100px;
+    left: 200px;
+
+}
+
+.quote-container{
+    display: flex;
+    flex-direction: column;
+    padding: 7rem 7rem;
+    align-items: center;
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 300px;
+}
+
+.img-wrapper{
+    width: 77.08px;
+    object-fit: contain;
+    max-width: 100%;
+    display: block;
+    align-items: center;
+
+}
+
+.quote-container h4 {
+    text-align: center;
+    margin-top: 4rem;
+    font-size: 1.7rem;
+    color: white;
+    width: 85%;
+    line-height: 1.5;
+}
+
+.quote-container p {
+    margin-top: 7rem;
+    color: white;
+    line-height: 1.2;
+    font-size: 1.2rem;
+}
