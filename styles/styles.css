@@ -346,7 +346,7 @@ section{
 .quote-bg1{
     position:absolute;
     z-index: 1;
-    content: url(/styles/images/home-quote-bg-l.svg);
+    content: url();
     top:100px;
     left: 200px;
 
@@ -385,4 +385,32 @@ section{
     color: white;
     line-height: 1.2;
     font-size: 1.2rem;
+}
+
+.who-we-serve{
+    background-color: white;
+    position: relative;
+}
+
+.who-we-serve-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 10rem;
+    padding-bottom: 10rem;
+}
+.who-we-serve-container h2{
+    color: #4240a6;
+    text-align: center;
+    font-size: 3rem;
+    line-height: 1.2;
+}
+.who-we-serve-container p{
+    color: #464652;
+    margin-top: 2rem;
+    font-size: 1.5rem;
+    font-weight: 300;
+}
+.who-we-serve-img{
+    margin-top: 2rem;
 }
