@@ -353,9 +353,11 @@ section{
 }
 
 .quote-container{
+    
+
     display: flex;
     flex-direction: column;
-    padding: 7rem 7rem;
+    padding: 6rem 0rem 12rem;
     align-items: center;
     max-width: 1200px;
     width: 100%;
@@ -390,14 +392,39 @@ section{
 .who-we-serve{
     background-color: white;
     position: relative;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.who-we-serve-pulse-img{
+    content: url(/styles/images/pulse-journey-mint.svg);
+    position: absolute;
+    top: -160px;
+    left: 47%;
+    transform: translate(-50%);
+    z-index: 3;
+}
+
+.who-we-serve-bg{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    inset: 0;
+    z-index: 2;
+    margin: 0;
+    padding: 0;
+    user-select: none;
+    background-image: url(/styles/images/who-we-serve-bg-left.svg),url(/styles/images/who-we-serve-bg-right.svg);
+    background-position: left 9.3rem, right 6.1rem center;
+    background-repeat: no-repeat; 
 }
 
 .who-we-serve-container{
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding-top: 10rem;
-    padding-bottom: 10rem;
+    padding-top: 14rem;
+    padding-bottom: 19rem;
 }
 .who-we-serve-container h2{
     color: #4240a6;
