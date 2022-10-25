@@ -441,3 +441,17 @@ section{
 .who-we-serve-img{
     margin-top: 2rem;
 }
+.who-we-serve-btn{
+    background-color: #ff384d;
+    color: white;
+    display: grid;
+    place-items: center;
+    padding: 1.1rem 2.2rem;
+    border-radius: 6px;
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: 700;
+    margin-top: 4rem;
+   
+
+}
