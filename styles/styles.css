@@ -453,3 +453,77 @@ section{
     font-weight: 700;
     margin-top: 4rem;
 }
+
+
+.value-props{
+   background-color: rgba(153, 242, 211, 0.2); 
+   z-index: 0;
+   position: relative;
+}
+.value-props-wrapper{
+   display: flex;
+   flex-direction: column;
+   max-width: 1200px; 
+   margin: 0 auto;
+   position: relative;
+   align-items: center;
+   padding-top: 8rem;
+   padding-bottom: 8rem;
+}
+.value-props-wrapper h2{
+    color: #4240a6;
+    font-size: 3rem;
+    line-height: 1;
+}
+.value-props-wrapper p {
+    margin-top: 2rem;
+    color: #464652;
+    font-size: 1.3rem;
+    text-align: center;
+}
+.value-props-card-grid{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin-top: 4rem;
+    grid-gap: 1rem 2rem;
+}
+
+.value-props-card{
+    background: white;
+    padding: 3rem 2rem;
+    grid-template-columns: 12ch auto;
+    align-items: center;
+    border-radius: 1.2rem;
+    box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.07);
+    display: grid;
+}
+
+.value-props-card-icon{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: 0 auto;
+}
+
+.value-props-card p{
+    margin-top: 0px;
+    font-weight: 700;
+}
+
+.value-props-card--bg-l{
+    position: absolute;
+    z-index:-1;
+    user-select: none;
+    content: url(/styles/images/why-bg-l.svg);
+    top: 60px;
+    left: -510px;
+}
+
+.value-props-card--bg-r{
+    position: absolute;
+    z-index:-1;
+    user-select: none;
+    content: url(/styles/images/why-bg-r.svg);
+    top: 84px;
+    right: -100px;
+}
