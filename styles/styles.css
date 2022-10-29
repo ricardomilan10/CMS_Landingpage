@@ -579,3 +579,40 @@ section{
     z-index: 2;
 }
 
+footer{
+   background-color: #4240a6;
+   padding-top: 5rem;
+   padding-bottom: 4rem;
+   color: white; 
+   position: relative;
+}
+footer .wrapper{
+    z-index: 0;
+    max-width: 1200px;
+    position: relative;
+    margin: 0 auto;
+}
+
+footer .content{
+    display: grid;
+    align-items: center;
+    column-gap: 30px;
+    grid-template-columns: 215px 1fr;
+}
+
+.grid{
+    grid-row-gap:20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-certified{
+    align-items: center;
+    display: flex;
+}
+
+.footer-social{
+    align-items: center;
+    column-gap: 10px;
+    display: flex;
+}
