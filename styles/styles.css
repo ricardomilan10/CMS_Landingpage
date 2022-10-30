@@ -441,6 +441,25 @@ section{
 .who-we-serve-img{
     margin-top: 2rem;
 }
+
+.value-grid{
+    display: grid;
+    margin: 2.6rem auto;
+    background: linear-gradient(90deg, #4240A6 22.77%, rgba(70, 67, 185, 0.9) 100%);
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
+    border-radius: 50%;
+    width: 220px;
+    height: 220px;
+    place-items: center;
+    text-align: center;
+}
+.value-grid h3{
+    color: white;
+    font-size: 1.8rem;
+    line-height: 1;
+}
+
+
 .who-we-serve-btn{
     background-color: #ff384d;
     color: white;
