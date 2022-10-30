@@ -587,6 +587,12 @@ footer{
    position: relative;
    text-decoration: none; 
 }
+.footer-bg{
+    content: url(/styles/images/footer-bg-left.svg);
+    top: -46px;
+    left: -150px;
+    position: absolute;
+}
 footer .wrapper{
     z-index: 0;
     max-width: 1200px;
@@ -617,6 +623,13 @@ footer .wrapper{
 }
 .footer-info p{
     margin-top: 1rem;
+    line-height: 1.5;
+}
+
+.footer-info a{
+    line-height: 1.6;
+    text-decoration: none;
+    color: white;
 }
 .footer-info img{
     max-width: 195px;
@@ -661,10 +674,13 @@ footer .wrapper{
     grid-column: 1 / -1;
     text-align: center;
     margin-top: 2rem;
-    line-height: 2;
+    line-height: 1.7;
 }
-
+.copyright a {
+    text-decoration: none;
+    color: #037f9b;
+}
 small {
-    font-size: 1rem;
-    line-height: 1.5;
+    font-size: .9rem;
+    line-height: 1;
 }
