@@ -4,6 +4,7 @@ header{
     padding: 30px 20px;
     max-width: 1200px;
     margin: 0 auto;
+    width: 100%;
 }
 header:after {
     content: "";
@@ -702,4 +703,9 @@ footer .wrapper{
 small {
     font-size: .9rem;
     line-height: 1;
+}
+
+
+ @media screen and (min-width:1440px)  {
+    header{display:none;}
 }
