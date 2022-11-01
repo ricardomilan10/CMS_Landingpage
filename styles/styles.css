@@ -1,24 +1,68 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap');
 
+header{
+    position:sticky;
+    top: 0;
+    z-index: 99;
+    background: white;
+}
+.header_container{
+    position: relative;
+    width: 1200px;
+    padding: 2rem 0; 
+    flex-direction: column;
+    margin: 0 auto;
+}
 
-header .header-buttons .blue-btn{
+.main-header-flex{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+.nav{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    z-index: 1;
+}
+.nav ul{
+    display: flex;
+    flex-direction: row;
+    margin: 0;
+    padding: 0;
+}
+.nav li{
+    color: #464652;
+    font-size: 1rem;
+    font-weight: 600;
+    position: relative;
+    padding: 0 20px;
+    display: inline-block;
+}
+.header-buttons{
+    display: flex;
+    margin-left:3rem;
+    flex-direction: row;
+}
+.red-btn{
+    display: grid;
     background:#ff384d ;
     padding: 10px 40px;
     color: white;
     border-radius: 6px;
-    position: relative;
-    top: 12px;
     font-weight: 700;
+    text-decoration: none;
 }
-header .header-buttons .purple-btn{
+ .purple-btn{
+    display: grid;
     background:#4240a6 ;
     padding: 10px 40px;
     margin-left: 1rem;
     color: white;
     border-radius: 6px;
-    position: relative;
-    top: 12px;
     font-weight: 700;
+    text-decoration: none;
 }
 section{
     position: relative;
@@ -28,9 +72,7 @@ section{
     background-repeat:no-repeat;
     background-position:center center;
     background-size: calc(2400px);
-    z-index: 0;
-    
-    
+    z-index: 0;   
 }
 .hero__container{
     padding: 12rem 2rem;
@@ -669,6 +711,17 @@ small {
 }
 
 
- @media screen and (min-width:1440px)  {
-    header{display:none;}
+@media screen and (min-width: 375px)
+{
+   
+}
+
+@media screen and (max-width: 1024px)
+{
+    
+}
+
+@media screen and (max-width: 1440px)
+{
+    
 }
