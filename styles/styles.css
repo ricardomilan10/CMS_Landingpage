@@ -10,6 +10,7 @@ header{
 .header_container{
     position: relative;
     max-width: 1200px;
+    width: 100%;
     padding: 2rem 0; 
     flex-direction: column;
     margin: 0 auto;
@@ -83,7 +84,7 @@ section{
     display: flex;
     flex-direction: row;
     align-items: center;
-    margin: 0px 300px;
+    margin: 0px auto;
     max-width: 1200px;
 }
 .bg{
@@ -660,6 +661,7 @@ footer{
 footer .wrapper{
     z-index: 0;
     max-width: 1200px;
+    width: 100%;
     position: relative;
     margin: 0 auto;
     text-decoration: none; 
@@ -751,21 +753,22 @@ small {
 
 /* HEADER SECTION */
 
-@media screen and (max-width: 1024px)
+@media screen and (min-width: 1440px)
 {
-    .header_container{padding:3.7rem 2rem;margin: 0 auto;}
-    
+ 
 }
 
-@media screen and (max-width: 1440px)
+@media screen and (max-width: 1024px)
 {
-    .header_container{padding:3.7rem 0;}
+   .header_container{max-width: 958px;margin: 0 auto;}
+   
+   
     
 }
 
 @media screen and (max-width: 767px)
 {
-   
+  
 }
 
 /* HERO SECTION */
