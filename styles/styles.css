@@ -151,6 +151,7 @@ section{
     justify-content: space-between;
     width: 100%;
     margin-top: 8rem;
+    text-align: center;
     
 }
 
@@ -759,15 +760,12 @@ small {
     .header-buttons{margin-left:0rem;}
     .nav li{padding: 0px 15px;}
     .red-btn{padding: 14px 30px;}
-    .purple-btn{padding: 14px 30px;}
+    .purple-btn{padding: 14px 20px;}
 }
 @media screen and (max-width: 1063px)
 {
     .red-btn{padding: 14px 30px;}
-    .purple-btn{padding: 14px 30px;}
-   
-   
-    
+    .purple-btn{padding: 14px 20px;} 
 }
 
 @media screen and (max-width: 1024px)
@@ -793,17 +791,57 @@ small {
   
 }
 
-@media screen and (max-width: 1440px)
+@media screen and (min-width: 1440px)
 {
-   
+   .hero__container{max-width:958px;}
     
 }
 
 @media screen and (max-width: 768px)
 {
     #hero{background: #4240A6;z-index: 0;}
+    .hero__container{padding:3rem 2rem;}
 }
 
+/* FRONT DOOR SECTION */
+
+@media screen and (min-width: 1024px)
+{
+    .front-door_container{max-width: 726px;}
+}
+
+@media screen and (min-width: 1440px)
+{
+   .front-door_container{max-width: 958px;}
+    
+}
+
+@media screen and (max-width: 768px)
+{
+    .front-door_cards{flex-direction: column;}
+    .card-btn_purple{width: 100%;}
+    .card-btn_teal{width: 100%;margin-top: 2.4rem;}
+    .card-btn_dark_purple{width: 100%;margin-top: 2.4rem;}
+}
+
+/* /FRONT DOOR SECTION */
+
+/* TRUST STATS*/
+@media screen and (max-width: 1024px)
+{
+    .trust-stats__container{max-width:726px;}
+}
+
+@media screen and (max-width: 1440px)
+{
+   .trust-stats__container{max-width:958px;}
+    
+}
+
+@media screen and (max-width: 768px)
+{
+    
+}
 
 
 /* WHO WE SERVE SECTION */
