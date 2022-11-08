@@ -226,6 +226,8 @@ section{
     padding-bottom:8rem;
     margin:0px auto;
     max-width: 1200px;
+    justify-content: center;
+    align-items: center;
 }
 
 .trust-stats_bg{
@@ -265,6 +267,7 @@ section{
     column-gap: 2rem;
     grid-template-columns: repeat(3, 1fr);
     margin-top: 7rem;
+    max-width: 1200px;
 }
 .stat-cards_topcard{
     display: flex;
@@ -306,6 +309,7 @@ section{
 
 .video-accessible_container{
     max-width: 1440px;
+    width: 100%;
     margin: 0 auto;
     display: flex;
     flex-direction: row;
@@ -625,12 +629,17 @@ section{
 .news-image{
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
+    align-items: center;
     justify-content: center;
+    flex: 1 1 calc(100% / 5 * 6);
+    padding: 1rem;
+    margin: 1rem;
 }
 .news-image img {
     border-radius: 6px;
     filter: drop-shadow(0px 4px 15px rgba(0, 0, 0, 0.15)); 
+    max-width: 100%;
+    object-fit: contain;
 }
 
 .news-bg{
@@ -824,24 +833,47 @@ small {
     .card-btn_dark_purple{width: 100%;margin-top: 2.4rem;}
 }
 
-/* /FRONT DOOR SECTION */
+
 
 /* TRUST STATS*/
-@media screen and (max-width: 1024px)
-{
-    .trust-stats__container{max-width:726px;}
-}
 
 @media screen and (max-width: 1440px)
 {
    .trust-stats__container{max-width:958px;}
+   .stat-cards_wrapper{max-width: 958px;}
     
+}
+
+@media screen and (max-width: 1024px)
+{
+    .trust-stats__container{max-width:726px;}
+    .stat-cards_wrapper{max-width: 726px;}
 }
 
 @media screen and (max-width: 768px)
 {
     
 }
+
+/* VIDEO ACESSIBLE*/
+
+@media screen and (max-width: 1440px)
+{
+   .video-accessible_container{max-width: 958px;}
+   .video-accessible_container{padding: 0px;}
+}
+
+@media screen and (max-width: 1024px)
+{
+    .video-accessible_container{max-width: 726px;}
+    
+}
+
+@media screen and (max-width: 768px)
+{
+    .video-accessible_container{flex-direction: column-reverse;}
+}
+
 
 
 /* WHO WE SERVE SECTION */
@@ -858,4 +890,21 @@ small {
 @media screen and (max-width: 767px)
 {
   .who-we-serve img{display: none;} 
+}
+
+/* NEWS SECTION */
+@media screen and (max-width: 1024px)
+{
+    .news-wrapper{flex-direction: column-reverse;padding: 5rem 5rem;}
+}
+
+@media screen and (max-width: 1440px)
+{
+    
+    
+}
+
+@media screen and (max-width: 767px)
+{
+ 
 }
