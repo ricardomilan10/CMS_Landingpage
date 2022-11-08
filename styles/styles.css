@@ -908,3 +908,18 @@ small {
 {
  
 }
+/* FOOTER SECTION */
+@media screen and (max-width: 1440px)
+{
+  footer .wrapper{width: 958px;}
+}
+
+@media screen and (max-width: 1024px)
+{
+  footer .wrapper{width: 726px;} 
+}
+
+@media screen and (max-width: 767px)
+{
+  
+}
