@@ -269,7 +269,7 @@ section{
     column-gap: 2rem;
     grid-template-columns: repeat(3, 1fr);
     margin-top: 7rem;
-    max-width: 1200px;
+    width: 100%;
 }
 .stat-cards_topcard{
     display: flex;
@@ -283,6 +283,7 @@ section{
 }
 
 .topcard_header{
+    text-align: center;
     color: #4240a6;
     font-weight: 700;
     font-size: 3rem;
@@ -861,19 +862,23 @@ small {
 @media screen and (max-width: 1440px)
 {
    .trust-stats__container{max-width:958px;}
-   .stat-cards_wrapper{max-width: 958px;}
+   .stat-cards_wrapper{width:100%;}
+   .trust-stats_description{padding: 0 1rem;}
+   .trust-stats_header{padding: 0 1rem;}
     
 }
 
 @media screen and (max-width: 1024px)
 {
     .trust-stats__container{max-width:726px;}
-    .stat-cards_wrapper{max-width: 726px;}
+   .stat-cards_wrapper{width: 100%;grid-template-columns: 1fr;padding: 0 1rem;}
+   
 }
 
 @media screen and (max-width: 768px)
 {
-    
+  .topcard_header{font-size:2rem ;} 
+  .topcard-description{font-size: 1.2rem;} 
 }
 
 /* VIDEO ACCESSIBLE 3/7 */
