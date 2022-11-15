@@ -760,7 +760,7 @@ footer{
 }
 
 .copyright{
-    display: grid;
+    /* display: grid; */
     grid-column: 1 / -1;
     text-align: center;
     margin-top: 2rem;
@@ -996,6 +996,8 @@ small {
 @media screen and (max-width: 1024px)
 {
   .footer-wrapper{max-width: 726px;} 
+  .footer-content{display: block;}
+  .grid{display: grid;}
 }
 
 @media screen and (max-width: 767px)
