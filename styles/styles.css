@@ -1011,5 +1011,8 @@ small {
   .menu-primary-footer{display: block;columns: 2;column-gap: 3rem;}
   .menu-primary-footer span{padding:1rem 1rem}
   .menu-primary-footer li {padding: 1rem 1rem;}
-
+  .footer-social{grid-column: 1 / -2;}
+}
+@media screen and (max-width: 374px){
+    .footer-certified{grid-column: 1 / 2;}
 }
