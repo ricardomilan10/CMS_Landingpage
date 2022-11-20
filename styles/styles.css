@@ -304,9 +304,9 @@ section{
 .video-accessible{
     background-color: white;
     width: 100%;
-    background-image: url(/styles/images/transparent-file3.png);
+    background-image: url(/styles/images/logo-big-light.png);
     background-repeat: no-repeat;
-    background-position: calc(50% + 220px) calc(100% + 100px);
+    background-position: calc(71% + 245px) calc(100% + 144px);
     background-size: 3844px;
     z-index: 1;
 }
@@ -358,6 +358,8 @@ section{
 }
 
 .image_col_2 img{
+    max-width: 558px;
+    filter: drop-shadow(0px 4px 15px rgba(0, 0, 0, 0.15));
     width: 100%;
     object-fit: contain;
     position: relative;
@@ -604,6 +606,11 @@ section{
     justify-content: center;
     flex-direction: column;
     margin: 0 auto;
+}
+
+.value-props-card img {
+    max-width: 100px;
+    height: 100px;
 }
 
 .value-props-card p{
@@ -860,7 +867,7 @@ small {
     top: -1200px;
     right: 1rem;
     background-color: white;
-    padding: 3.2rem;
+    padding: 1.2rem;
     border-radius: 5px 0px 0px 5px;}
     .nav ul{flex-direction: column;}
     .nav li {padding: 24px 15px 24px 0;}
