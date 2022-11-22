@@ -34,13 +34,18 @@ header{
     margin: 0;
     padding: 0;
 }
-.nav li{
+.nav li {
+    
     color: #464652;
     font-size: 1rem;
     font-weight: 600;
     position: relative;
     padding: 0 20px;
     display: inline-block;
+    cursor: pointer;
+}
+.nav li :hover{
+    color: #519c4c;
 }
 .header-buttons{
     display: flex;
@@ -55,6 +60,7 @@ header{
     border-radius: 6px;
     font-weight: 700;
     text-decoration: none;
+    transition:  font 0.3s ease;
 }
  .purple-btn{
     display: grid;
@@ -80,6 +86,7 @@ section{
     z-index: 0;   
 }
 .hero__container{
+    position: relative;
     padding: 12rem 2rem;
     display: flex;
     flex-direction: row;
@@ -97,17 +104,21 @@ section{
     padding: 0;
     user-select: none;
 }
-/* .bg-img{
+.bg-img{
     content: url(/styles/images/trust-stats-bg-right.svg);
-    top: 0;
-    left: -380px;
-} */
-.hero__container .bg::before{
+    top: 11px;
+    right: 802px;
+    position: absolute;
+    user-select: none;
+    z-index: -5;
+}
+/* .hero__container .bg::before{
     content: url(/styles/images/trust-stats-bg-right.svg);
     top: 0;
     left: -50px;
     position: absolute;
-}
+    
+} */
 .hero__title{
     color: white;
     width: fit-content;
@@ -124,6 +135,7 @@ section{
     z-index: 0;
 }
 .front-door_container{
+    position: relative;
     display:flex;
     flex-direction: column;
     align-items: center;
@@ -161,15 +173,17 @@ section{
 .front-door_bg_img{
     position: absolute;
     content: url(/styles/images/front-door-bg-l.svg);
-    top: 100px;
-    left: 320px;
+    top: 151px;
+    left: -47px;
+    z-index: -4;
 }
 
 .front-door_bg_img2{
     position: absolute;
     content: url(/styles/images/front-door-bg-r.svg);
-    top: 100px;
-    right: 320px;
+    top: 156px;
+    right: -5px;
+    z-index: -4;
 }
 
 .card-btn_purple {
@@ -384,30 +398,18 @@ section{
 
 /* QUOTE SECTION */
 .quote{
-
-    position: relative;
     background-color: #519c4c;
     padding-top: 5rem;
     padding-bottom: 4rem;
     color: white;
-    position: relative;
     text-decoration: none;
-    background-image: url("/styles/images/trust-stats-bg-right.svg");
+    /* background-image: url(/styles/images/trust-stats-bg-right.svg),url(/styles/images/trust-stats-bg-right3-svg.svg);
     background-repeat: no-repeat;
-    background-position: calc(50% - 509px) calc(44% + 1px);
+    background-position: calc(42% - 509px) calc(66% + 1px), calc(137% - 509px) calc(69% + 1px); */
 }
-
-.quote-bg1{
-    position:absolute;
-    z-index: 1;
-    content: url(/styles/images/trust-stats-bg-right.svg);
-    top:100px;
-    left: 200px;
-}
-
-
 
 .quote-container{
+    position: relative;
     display: flex;
     flex-direction: column;
     padding: 6rem 0rem 12rem;
@@ -416,15 +418,34 @@ section{
     width: 100%;
     margin: 0 auto;
 }
-
 .img-wrapper{
     width: 77.08px;
     object-fit: contain;
     max-width: 100%;
     display: block;
     align-items: center;
+}
+
+.quote-bg1{
+    position:absolute;
+    z-index: 0;
+    right: 700px;
+    top: 30px;  
+}
+
+
+
+.quote-bg2{
+    position:absolute;
+    z-index: 0;
+    left: 200px;
+    width:100%;
+    top: 25px;  
+    transform: scaleX(-1);
+    overflow: hidden;
 
 }
+
 
 .quote-container h4 {
     text-align: center;
@@ -471,11 +492,12 @@ section{
     padding: 0;
     user-select: none;
     background-image: url(/styles/images/who-we-serve-bg-left.svg),url(/styles/images/who-we-serve-bg-right.svg);
-    background-position: left 9.3rem, right 6.1rem center;
+    background-position: left 8.3rem, right 1.1rem center;
     background-repeat: no-repeat; 
 }
 
 .who-we-serve-container{
+    position: relative;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -548,6 +570,8 @@ section{
     font-size: 1.2rem;
     font-weight: 700;
     margin-top: 4rem;
+    cursor: pointer;
+
 }
 
 /* / WHO WE SERVE SECTION */
@@ -889,32 +913,38 @@ small {
 }
 
 /* HERO SECTION */
-@media screen and (max-width: 1024px)
-{
-  
-}
 
-@media screen and (min-width: 1440px)
+@media screen and (max-width: 1440px)
 {
    .hero__container{max-width:958px;}
+   .bg-img{right: 566px;}
     
 }
+
+@media screen and (max-width: 1024px)
+{
+    .hero__container{max-width:958px;}
+}
+
 
 @media screen and (max-width: 768px)
 {
     #hero{background: #519c4c;z-index: 0;}
     .hero__container{padding:3rem 2rem;}
     .hero__title{font-size: 3rem;}
+    .bg-img{right: 300px;}
 }
 
 @media screen and (max-width: 578px)
 {
-    .hero__container .bg::before{left:-250px;}
+    
+    .bg-img{right:100px;}
 }
 
 @media screen and (max-width: 375px)
 {
-    .hero__container .bg::before{left:-325px;}
+    
+    
 }
 
 
