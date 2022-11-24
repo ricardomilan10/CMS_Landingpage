@@ -317,21 +317,43 @@ section{
 
 .video-accessible{
     background-color: white;
-    width: 100%;
-    background-image: url(/styles/images/logo-big-light.png);
+     background-image: url(/styles/images/logo-big-light.png);
     background-repeat: no-repeat;
-    background-position: calc(71% + 245px) calc(100% + 144px);
-    background-size: 3844px;
-    z-index: 1;
+    background-position: calc(47% + 144px) calc(100% + 144px);
+    background-size: 3844px; 
+    position: relative;
+    margin: 0 auto;
+}
+
+.video-accessible-bg{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    height: 100%;
+    max-width: 1440px;
 }
 
 .video-accessible_container{
-    max-width: 1440px;
+    max-width: 1200px;
+    z-index: 9;
+    position: relative;
     width: 100%;
     margin: 0 auto;
     display: flex;
     flex-direction: row;
     padding: 5.5rem 10.7rem;
+}
+
+.big-logo-img{
+    position: absolute;
+    z-index: -8;
+    left: -1300px;
+   
 }
 
 .paragraph_col_1{
@@ -398,14 +420,33 @@ section{
 
 /* QUOTE SECTION */
 .quote{
+    position: relative;
     background-color: #519c4c;
     padding-top: 5rem;
     padding-bottom: 4rem;
     color: white;
     text-decoration: none;
+    position: relative;
+    overflow: hidden;
     /* background-image: url(/styles/images/trust-stats-bg-right.svg),url(/styles/images/trust-stats-bg-right3-svg.svg);
     background-repeat: no-repeat;
     background-position: calc(42% - 509px) calc(66% + 1px), calc(137% - 509px) calc(69% + 1px); */
+}
+
+.quote-bg1{
+    position:absolute;
+    z-index: 0;
+    right: 700px;
+    top: 30px;  
+}
+
+
+.quote-bg2{
+    position:absolute;
+    z-index: 0;
+    left: 700px;
+    top: 25px;  
+    transform: scaleX(-1);
 }
 
 .quote-container{
@@ -425,27 +466,6 @@ section{
     display: block;
     align-items: center;
 }
-
-.quote-bg1{
-    position:absolute;
-    z-index: 0;
-    right: 700px;
-    top: 30px;  
-}
-
-
-
-.quote-bg2{
-    position:absolute;
-    z-index: 0;
-    left: 200px;
-    width:100%;
-    top: 25px;  
-    transform: scaleX(-1);
-    overflow: hidden;
-
-}
-
 
 .quote-container h4 {
     text-align: center;
