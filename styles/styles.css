@@ -545,7 +545,10 @@ section{
 }
 .who-we-serve-img{
     z-index: 4;
-    width: 1200px;
+}
+
+.who-we-serve-img img{
+    width: 1200px;   
 }
 
 .value-grid{
